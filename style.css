@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #aa08ca4c;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  border: 2px solid;
+  text-align: center;
+  margin: 30px;
+}
+
+main {
+  background-color: #aa08ca4c;
+  height: auto;
+  width: auto;
+  min-width: 1px;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 30px;
+}
+
+.content-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1px;
+}
+
+.input-add {
+  border: none;
+  height: 25px;
+  min-width: 1px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.button-add {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  color: #aa08cab1;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid #aa08ca4c;
+}
+
+.button-add:active {
+  transform: translateY(4px);
+}
+.button-add:hover {
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+ul {
+  text-align: justify;
+  padding: 30px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #aa08ca4c;
+}
+
+li button {
+  margin-left: auto;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "✗";
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #e04331;
+
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + p {
+  text-decoration: line-through;
+  color: #e04331;
+}
+
+input:focus {
+  outline-color: #aa08cae2;
+}
+
+.fa-trash {
+  color: #ffffff;
+  font-size: 15px;
+}
+.fa-trash:hover {
+  color: #e04331;
+}
